@@ -79,7 +79,7 @@
     "zx": "4.3.0"
   },
   "devDependencies": {
-    "@innei-util/eslint-config-ts": "0.5.0",
+    "@innei-util/eslint-config-ts": "0.8.2",
     "@innei-util/prettier": "0.4.1",
     "@nestjs/cli": "8.2.3",
     "@nestjs/schematics": "8.0.8",
