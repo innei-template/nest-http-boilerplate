@@ -15,7 +15,7 @@ specifiers:
   '@nestjs/platform-fastify': 8.4.4
   '@nestjs/schedule': 1.0.2
   '@nestjs/schematics': 8.0.8
-  '@nestjs/swagger': 5.2.0
+  '@nestjs/swagger': 5.2.1
   '@nestjs/testing': 8.4.4
   '@typegoose/auto-increment': 1.2.0
   '@typegoose/typegoose': 9.7.0
@@ -79,7 +79,7 @@ dependencies:
   '@nestjs/passport': 8.2.1_9e25dd30011c9f67d234e31a708ff266
   '@nestjs/platform-fastify': 8.4.4_a78378ec5f3cecc3c353ed91b578f3e6
   '@nestjs/schedule': 1.0.2_8a3f4045e53a03a04c90c8adfa35dfce
-  '@nestjs/swagger': 5.2.0_9f977080681191d8dbf802696c83152b
+  '@nestjs/swagger': 5.2.1_9f977080681191d8dbf802696c83152b
   '@typegoose/auto-increment': 1.2.0_mongoose@6.2.8
   '@typegoose/typegoose': 9.7.0_mongoose@6.2.8
   bcrypt: 5.0.1
@@ -564,8 +564,8 @@ packages:
       - chokidar
     dev: true
 
-  /@nestjs/swagger/5.2.0_9f977080681191d8dbf802696c83152b:
-    resolution: {integrity: sha512-wcW2KCe7irwBw0WKsb03uFk4gnjqNcAcJxXGZxi6ljFiDgyLrQtx5MpE95o703tnn4V/hZR8MqMNFOXuup7Pqw==}
+  /@nestjs/swagger/5.2.1_9f977080681191d8dbf802696c83152b:
+    resolution: {integrity: sha512-7dNa08WCnTsW/oAk3Ujde+z64JMfNm19DhpXasFR8oJp/9pggYAbYU927HpA+GJsSFJX6adjIRZsCKUqaGWznw==}
     peerDependencies:
       '@nestjs/common': ^8.0.0
       '@nestjs/core': ^8.0.0
