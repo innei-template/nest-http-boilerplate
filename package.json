@@ -67,7 +67,7 @@
     "consola": "*",
     "cron": "*",
     "dayjs": "1.11.1",
-    "fastify-swagger": "5.1.1",
+    "fastify-swagger": "5.2.0",
     "lodash": "*",
     "mongoose": "6.3.0",
     "mongoose-paginate-v2": "1.6.3",
