@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 overrides:
   typescript: 4.7.4
   fastify-cors: npm:@fastify/cors@^7.0.0
-  fastify-formbody: npm:@fastify/formbody@^6.0.0
+  fastify-formbody: npm:@fastify/formbody@^7.0.0
 
 specifiers:
   '@innei/eslint-config-ts': latest
@@ -523,8 +523,8 @@ packages:
       fast-json-stringify: 4.2.0
     dev: true
 
-  /@fastify/formbody/6.0.1:
-    resolution: {integrity: sha512-yIwCitoES4Sh0tPc6v+uHBqZEKw3CooSZ4kUvO9NC8Y7oRBCW+aC+pTgUZ8M3r2DOzRkNO+Pq0jMQkyL2k8jZQ==}
+  /@fastify/formbody/7.0.1:
+    resolution: {integrity: sha512-CY6IfzdtidHbZezyyXv7u9dzmb2Lv92HyOZDqANuFb++5ojsqoqIb8bJz11bSgPK0MDoqww/dH6DxZDMM8N4ng==}
     dependencies:
       fastify-plugin: 3.0.1
     dev: false
@@ -833,7 +833,7 @@ packages:
       '@nestjs/core': 8.4.7_g7av3gvncewo44y4rurz3mgav4
       fastify: 3.29.0
       fastify-cors: /@fastify/cors/7.0.0
-      fastify-formbody: /@fastify/formbody/6.0.1
+      fastify-formbody: /@fastify/formbody/7.0.1
       light-my-request: 5.0.0
       middie: 6.1.0
       path-to-regexp: 3.2.0
@@ -2226,6 +2226,7 @@ packages:
     dependencies:
       ms: 2.1.2
     dev: false
+    optional: true
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -2934,7 +2935,7 @@ packages:
     engines: {node: '>= 10.17.0'}
     hasBin: true
     dependencies:
-      debug: 4.3.3
+      debug: 4.3.4
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -3229,7 +3230,7 @@ packages:
     dev: true
 
   /fs.realpath/1.0.0:
-    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
+    resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
@@ -3453,7 +3454,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.3
+      debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: false
