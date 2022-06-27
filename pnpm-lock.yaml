@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 overrides:
   typescript: 4.7.4
-  fastify-cors: npm:@fastify/cors@^7.0.0
+  fastify-cors: npm:@fastify/cors@^8.0.0
   fastify-formbody: npm:@fastify/formbody@^6.0.0
 
 specifiers:
@@ -502,8 +502,8 @@ packages:
       fast-uri: 1.0.1
     dev: true
 
-  /@fastify/cors/7.0.0:
-    resolution: {integrity: sha512-nlo6ScwagBNJacAZD3KX90xjWLIoV0vN9QqoX1wUE9ZeZMdvkVkMZCGlxEtr00NshV0X5wDge4w5rwox7rRzSg==}
+  /@fastify/cors/8.0.0:
+    resolution: {integrity: sha512-mB2GsA7aVwq7XG6B2OM1FMpcaiXY69ZbM1h/xDJxLEVu5ITGcs5XYrBIYTMNU2dQtzO6mzXhGd2dEKaCnB7UgQ==}
     dependencies:
       fastify-plugin: 3.0.1
       vary: 1.1.2
@@ -683,7 +683,7 @@ packages:
       nopt: 5.0.0
       npmlog: 4.1.2
       rimraf: 3.0.2
-      semver: 7.3.5
+      semver: 7.3.7
       tar: 6.1.11
     transitivePeerDependencies:
       - encoding
@@ -832,7 +832,7 @@ packages:
       '@nestjs/common': 8.4.7_rfiwcbffiuhkhhtbrxxsyxpam4
       '@nestjs/core': 8.4.7_g7av3gvncewo44y4rurz3mgav4
       fastify: 3.29.0
-      fastify-cors: /@fastify/cors/7.0.0
+      fastify-cors: /@fastify/cors/8.0.0
       fastify-formbody: /@fastify/formbody/6.0.1
       light-my-request: 5.0.0
       middie: 6.1.0
@@ -2226,6 +2226,7 @@ packages:
     dependencies:
       ms: 2.1.2
     dev: false
+    optional: true
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -2934,7 +2935,7 @@ packages:
     engines: {node: '>= 10.17.0'}
     hasBin: true
     dependencies:
-      debug: 4.3.3
+      debug: 4.3.4
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -3229,7 +3230,7 @@ packages:
     dev: true
 
   /fs.realpath/1.0.0:
-    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
+    resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
@@ -3453,7 +3454,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.3
+      debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -5125,6 +5126,7 @@ packages:
     dependencies:
       lru-cache: 6.0.0
     dev: false
+    optional: true
 
   /semver/7.3.7:
     resolution: {integrity: sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==}
