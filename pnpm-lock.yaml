@@ -50,7 +50,7 @@ specifiers:
   ioredis: '*'
   lint-staged: 13.0.3
   lodash: '*'
-  mongodb-memory-server: 8.7.1
+  mongodb-memory-server: 8.7.2
   mongoose: 6.4.0
   mongoose-paginate-v2: 1.6.3
   nanoid: 4.0.0
@@ -110,7 +110,7 @@ dependencies:
   zx-cjs: 6.1.0
 
 optionalDependencies:
-  mongodb-memory-server: 8.7.1
+  mongodb-memory-server: 8.7.2
   redis-memory-server: 0.5.0
 
 devDependencies:
@@ -1873,7 +1873,7 @@ packages:
     dev: false
 
   /buffer-crc32/0.2.13:
-    resolution: {integrity: sha1-DTM+PwDqxQqhRUq9MO+MKl2ackI=}
+    resolution: {integrity: sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==}
     dev: false
     optional: true
 
@@ -2123,7 +2123,7 @@ packages:
     optional: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
   /consola/2.15.3:
     resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
@@ -2226,6 +2226,7 @@ packages:
     dependencies:
       ms: 2.1.2
     dev: false
+    optional: true
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -2934,7 +2935,7 @@ packages:
     engines: {node: '>= 10.17.0'}
     hasBin: true
     dependencies:
-      debug: 4.3.3
+      debug: 4.3.4
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -3059,7 +3060,7 @@ packages:
       reusify: 1.0.4
 
   /fd-slicer/1.1.0:
-    resolution: {integrity: sha1-JcfInLH5B3+IkbvmHY85Dq4lbx4=}
+    resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==}
     dependencies:
       pend: 1.2.0
     dev: false
@@ -3453,7 +3454,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.3
+      debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -4241,8 +4242,8 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb-memory-server-core/8.7.1:
-    resolution: {integrity: sha512-ysMg0G8EqvjkWjO1i7s7mLSJDgLUdq5rms9IhpHX9TkiuRz475j7EUPSvdJGBby7qvgEockZCyEBOil7GlvZSg==}
+  /mongodb-memory-server-core/8.7.2:
+    resolution: {integrity: sha512-ScYLuxJ9NFhxatu+d+1T0ncJI1aeLFIXYaGGi7Gg5jTbnYvldOdZaabxD/LIigFurJOHFFBReJ0A++njOssdIw==}
     engines: {node: '>=12.22.0'}
     dependencies:
       '@types/tmp': 0.2.3
@@ -4266,12 +4267,12 @@ packages:
     dev: false
     optional: true
 
-  /mongodb-memory-server/8.7.1:
-    resolution: {integrity: sha512-NIn5pL3Q/bK9H/KRSanpgFuZWrNiTn3y3XUyxE6qm1nFq46z7rmwU0IYZ3STy0O8Gg7r8DzC9xx4/UVFP5HnxA==}
+  /mongodb-memory-server/8.7.2:
+    resolution: {integrity: sha512-uD1lyrCQ40MAxkJTZVLjy+WomHGcmCWxuXqlKujXP64CSH+vPMXRWqRbcfxNesc2C98h6IU7yrHbMp0SmTbvdQ==}
     engines: {node: '>=12.22.0'}
     requiresBuild: true
     dependencies:
-      mongodb-memory-server-core: 8.7.1
+      mongodb-memory-server-core: 8.7.2
       tslib: 2.4.0
     transitivePeerDependencies:
       - supports-color
@@ -4705,7 +4706,7 @@ packages:
     dev: false
 
   /pend/1.2.0:
-    resolution: {integrity: sha1-elfrVQpng/kRUzH89GY9XI4AelA=}
+    resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
     dev: false
     optional: true
 
@@ -5760,7 +5761,7 @@ packages:
       punycode: 2.1.1
 
   /util-deprecate/1.0.2:
-    resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}
+    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
   /utils-merge/1.0.1:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
@@ -6022,7 +6023,7 @@ packages:
     dev: true
 
   /yauzl/2.10.0:
-    resolution: {integrity: sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=}
+    resolution: {integrity: sha512-p4a9I6X6nu6IhoGmBqAcbJy1mlC4j27vEPZX9F4L4/vZT3Lyq1VkFHw/V/PUcB9Buo+DG3iHkT0x3Qya58zc3g==}
     dependencies:
       buffer-crc32: 0.2.13
       fd-slicer: 1.1.0
