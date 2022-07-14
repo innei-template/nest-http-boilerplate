@@ -51,7 +51,7 @@
     "@nestjs/passport": "9.0.0",
     "@nestjs/platform-fastify": "9.0.3",
     "@nestjs/schedule": "2.1.0",
-    "@nestjs/swagger": "6.0.3",
+    "@nestjs/swagger": "6.0.4",
     "@typegoose/auto-increment": "1.4.1",
     "@typegoose/typegoose": "9.10.1",
     "axios": "0.27.2",
