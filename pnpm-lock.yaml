@@ -49,7 +49,7 @@ specifiers:
   lint-staged: 13.0.3
   lodash: '*'
   mongodb-memory-server: 8.7.2
-  mongoose: 6.4.5
+  mongoose: 6.5.1
   mongoose-paginate-v2: 1.7.0
   nanoid: 4.0.0
   passport: 0.6.0
@@ -82,8 +82,8 @@ dependencies:
   '@nestjs/platform-fastify': 9.0.7_xxlaro4n3ygapuy65e43lboh2y
   '@nestjs/schedule': 2.1.0_pdtl3hujhzr673j53ucwmxga3i
   '@nestjs/swagger': 6.0.4_rhnx5xwlkj3pggvsdobfv65ghu
-  '@typegoose/auto-increment': 1.4.1_mongoose@6.4.5
-  '@typegoose/typegoose': 9.10.1_mongoose@6.4.5
+  '@typegoose/auto-increment': 1.4.1_mongoose@6.5.1
+  '@typegoose/typegoose': 9.10.1_mongoose@6.5.1
   axios: 0.27.2
   bcrypt: 5.0.1
   cache-manager: 4.1.0
@@ -95,7 +95,7 @@ dependencies:
   cron: 2.1.0
   dayjs: 1.11.3
   lodash: 4.17.21
-  mongoose: 6.4.5
+  mongoose: 6.5.1
   mongoose-paginate-v2: 1.7.0
   nanoid: 4.0.0
   passport: 0.6.0
@@ -958,18 +958,18 @@ packages:
       '@redis/client': 1.2.0
     dev: false
 
-  /@typegoose/auto-increment/1.4.1_mongoose@6.4.5:
+  /@typegoose/auto-increment/1.4.1_mongoose@6.5.1:
     resolution: {integrity: sha512-Hh7Vcjlz3GWkbEKwH7UxsbPQD1vpm76vFMCPOm2z36E+dCu2hyHruWnaAIK8co6iNGxyam617e+6yuHr114fCQ==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       mongoose: ~6.4.2
     dependencies:
       loglevel: 1.8.0
-      mongoose: 6.4.5
+      mongoose: 6.5.1
       tslib: 2.4.0
     dev: false
 
-  /@typegoose/typegoose/9.10.1_mongoose@6.4.5:
+  /@typegoose/typegoose/9.10.1_mongoose@6.5.1:
     resolution: {integrity: sha512-wHThVHSKNrCAWcasiBrN0hDDN3JRVJmRCHueyungRf/KexFArK/asqffllXSaAXKb1APrJbGGxEWueZR0z9fpw==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
@@ -977,7 +977,7 @@ packages:
     dependencies:
       lodash: 4.17.21
       loglevel: 1.8.0
-      mongoose: 6.4.5
+      mongoose: 6.5.1
       reflect-metadata: 0.1.13
       semver: 7.3.7
       tslib: 2.4.0
@@ -2188,15 +2188,9 @@ packages:
     engines: {node: '>=0.10'}
     dev: false
 
-  /denque/2.0.1:
-    resolution: {integrity: sha512-tfiWc6BQLXNLpNiR5iGd0Ocu3P3VpxfzFiqubLgMfhfOw9WyvgJBd46CClNn9k3qfbjvT//0cf7AlYRX/OslMQ==}
-    engines: {node: '>=0.10'}
-    dev: false
-
   /denque/2.1.0:
     resolution: {integrity: sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==}
     engines: {node: '>=0.10'}
-    dev: true
 
   /depd/2.0.0:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
@@ -4224,7 +4218,20 @@ packages:
     engines: {node: '>=12.9.0'}
     dependencies:
       bson: 4.6.5
-      denque: 2.0.1
+      denque: 2.1.0
+      mongodb-connection-string-url: 2.5.2
+      socks: 2.6.2
+    optionalDependencies:
+      saslprep: 1.0.3
+    dev: false
+    optional: true
+
+  /mongodb/4.8.1:
+    resolution: {integrity: sha512-/NyiM3Ox9AwP5zrfT9TXjRKDJbXlLaUDQ9Rg//2lbg8D2A8GXV0VidYYnA/gfdK6uwbnL4FnAflH7FbGw3TS7w==}
+    engines: {node: '>=12.9.0'}
+    dependencies:
+      bson: 4.6.5
+      denque: 2.1.0
       mongodb-connection-string-url: 2.5.2
       socks: 2.6.2
     optionalDependencies:
@@ -4236,13 +4243,13 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: false
 
-  /mongoose/6.4.5:
-    resolution: {integrity: sha512-2E56DnJ4z5pWnBH4/pFGWuDFRn1Wt/JxU31Hcu0ZZtsd8I6piHavLawC9ND6GgyBpHov/aVLPLXtzB+HPKeKQg==}
+  /mongoose/6.5.1:
+    resolution: {integrity: sha512-8C0213y279nrSp6Au+WB+l/VczcotMU65jalTJJxU6KYf/Kd8gNW9+B3giWNJOVd8VvKvUQG0suWv/Vngp/83A==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.6.5
       kareem: 2.4.1
-      mongodb: 4.7.0
+      mongodb: 4.8.1
       mpath: 0.9.0
       mquery: 4.0.3
       ms: 2.1.3
