@@ -64,7 +64,7 @@
     "class-validator": "0.13.2",
     "consola": "*",
     "cron": "*",
-    "dayjs": "1.11.3",
+    "dayjs": "1.11.5",
     "lodash": "*",
     "mongoose": "6.4.5",
     "mongoose-paginate-v2": "1.7.0",
