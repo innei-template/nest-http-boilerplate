@@ -16,7 +16,7 @@ specifiers:
   '@nestjs/platform-fastify': 9.0.7
   '@nestjs/schedule': 2.1.0
   '@nestjs/schematics': 9.0.1
-  '@nestjs/swagger': 6.0.4
+  '@nestjs/swagger': 6.1.2
   '@nestjs/testing': 9.0.7
   '@typegoose/auto-increment': 1.4.1
   '@typegoose/typegoose': 9.10.1
@@ -81,7 +81,7 @@ dependencies:
   '@nestjs/passport': 9.0.0_2fq5yfrcl6cznjgkyjyniahzdi
   '@nestjs/platform-fastify': 9.0.7_xxlaro4n3ygapuy65e43lboh2y
   '@nestjs/schedule': 2.1.0_pdtl3hujhzr673j53ucwmxga3i
-  '@nestjs/swagger': 6.0.4_rhnx5xwlkj3pggvsdobfv65ghu
+  '@nestjs/swagger': 6.1.2_rhnx5xwlkj3pggvsdobfv65ghu
   '@typegoose/auto-increment': 1.4.1_mongoose@6.4.5
   '@typegoose/typegoose': 9.10.1_mongoose@6.4.5
   axios: 0.27.2
@@ -111,7 +111,7 @@ optionalDependencies:
   redis-memory-server: 0.5.0
 
 devDependencies:
-  '@innei/eslint-config-ts': 0.9.4
+  '@innei/eslint-config-ts': 0.9.4_typescript@4.7.4
   '@innei/prettier': 0.9.4
   '@nestjs/cli': 9.0.0
   '@nestjs/schematics': 9.0.1_typescript@4.7.4
@@ -542,8 +542,10 @@ packages:
       - supports-color
     dev: true
 
-  /@innei/eslint-config-ts/0.9.4:
+  /@innei/eslint-config-ts/0.9.4_typescript@4.7.4:
     resolution: {integrity: sha512-T52M6omBVNP6CbRN0sWNf8TjEEocuPTSN+FnVUY7c1P8JfgOTH9PFOG8fEt59UZLxZEIjy26pHGDqATv9inGVA==}
+    peerDependencies:
+      typescript: '>=4'
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.30.7_6wltbjakwuqm7awqswigmiuhd4
       '@typescript-eslint/parser': 5.30.7_he2ccbldppg44uulnyq4rwocfa
@@ -835,8 +837,8 @@ packages:
       - chokidar
     dev: true
 
-  /@nestjs/swagger/6.0.4_rhnx5xwlkj3pggvsdobfv65ghu:
-    resolution: {integrity: sha512-YKf9RvCYHAgqkMvUG3xRr0zAcnuN8JsWPfvi7h0hzEXLRhNxByj2FT8Rzj+0fPAe6VZioWXBDpLzshO2PjE48Q==}
+  /@nestjs/swagger/6.1.2_rhnx5xwlkj3pggvsdobfv65ghu:
+    resolution: {integrity: sha512-RU1DeTDyuN/lRXKFWaf7I9LYF34/ale3IIGeY3romAcXL/N9W0+50Ek3ou+Ajd5FqpLqzt7saYhnaQegVuU4UQ==}
     peerDependencies:
       '@fastify/static': ^6.0.0
       '@nestjs/common': ^9.0.0
@@ -853,7 +855,7 @@ packages:
       lodash: 4.17.21
       path-to-regexp: 3.2.0
       reflect-metadata: 0.1.13
-      swagger-ui-dist: 4.12.0
+      swagger-ui-dist: 4.14.0
     transitivePeerDependencies:
       - class-transformer
       - class-validator
@@ -5409,8 +5411,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /swagger-ui-dist/4.12.0:
-    resolution: {integrity: sha512-B0Iy2ueXtbByE6OOyHTi3lFQkpPi/L7kFOKFeKTr44za7dJIELa9kzaca6GkndCgpK1QTjArnoXG+aUy0XQp1w==}
+  /swagger-ui-dist/4.14.0:
+    resolution: {integrity: sha512-TBzhheU15s+o54Cgk9qxuYcZMiqSm/SkvKnapoGHOF66kz0Y5aGjpzj5BT/vpBbn6rTPJ9tUYXQxuDWfsjiGMw==}
     dev: false
 
   /symbol-observable/4.0.0:
