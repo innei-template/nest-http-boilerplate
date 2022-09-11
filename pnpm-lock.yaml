@@ -61,7 +61,7 @@ specifiers:
   rimraf: 3.0.2
   run-script-webpack-plugin: 0.1.1
   rxjs: 7.5.6
-  snakecase-keys: 5.4.2
+  snakecase-keys: 5.4.4
   ts-loader: 9.3.1
   tsconfig-paths: 4.1.0
   typescript: 4.7.4
@@ -103,7 +103,7 @@ dependencies:
   redis: 4.3.1
   reflect-metadata: 0.1.13
   rxjs: 7.5.6
-  snakecase-keys: 5.4.2
+  snakecase-keys: 5.4.4
   zx-cjs: 7.0.7-0
 
 optionalDependencies:
@@ -5233,8 +5233,8 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /snakecase-keys/5.4.2:
-    resolution: {integrity: sha512-6mzBNP9t1ghArxcaCxZNGIJewE9qyH+eUQIGba9I7MJcZoV4WX4fM2Y+/K9+BGHCFB94ZASfoC3F44UxLXce+A==}
+  /snakecase-keys/5.4.4:
+    resolution: {integrity: sha512-YTywJG93yxwHLgrYLZjlC75moVEX04LZM4FHfihjHe1FCXm+QaLOFfSf535aXOAd0ArVQMWUAe8ZPm4VtWyXaA==}
     engines: {node: '>=12'}
     dependencies:
       map-obj: 4.3.0

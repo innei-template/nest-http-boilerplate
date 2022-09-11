@@ -74,7 +74,7 @@
     "redis": "4.3.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "7.5.6",
-    "snakecase-keys": "5.4.2",
+    "snakecase-keys": "5.4.4",
     "zx-cjs": "7.0.7-0"
   },
   "devDependencies": {
