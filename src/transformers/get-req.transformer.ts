@@ -2,7 +2,7 @@ import { FastifyRequest } from 'fastify'
 
 import { ExecutionContext } from '@nestjs/common'
 
-import { UserModel } from '~/modules/user/user.model'
+import { UserModel } from '~/modules/user/user.model.js'
 
 export function getNestExecutionContextRequest(
   context: ExecutionContext,

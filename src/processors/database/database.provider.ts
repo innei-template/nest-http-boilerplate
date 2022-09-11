@@ -3,8 +3,8 @@
  */
 import { mongoose } from '@typegoose/typegoose'
 
-import { MONGO_DB } from '~/app.config'
-import { DB_CONNECTION_TOKEN } from '~/constants/system.constant'
+import { MONGO_DB } from '~/app.config.js'
+import { DB_CONNECTION_TOKEN } from '~/constants/system.constant.js'
 
 export const databaseProvider = {
   provide: DB_CONNECTION_TOKEN,

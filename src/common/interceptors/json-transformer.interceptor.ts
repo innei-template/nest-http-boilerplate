@@ -14,7 +14,7 @@ import {
 } from '@nestjs/common'
 import { Reflector } from '@nestjs/core'
 
-import { RESPONSE_PASSTHROUGH_METADATA } from '~/constants/system.constant'
+import { RESPONSE_PASSTHROUGH_METADATA } from '~/constants/system.constant.js'
 
 @Injectable()
 export class JSONTransformerInterceptor implements NestInterceptor {

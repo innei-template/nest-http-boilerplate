@@ -2,11 +2,11 @@ import { Module } from '@nestjs/common'
 import { JwtModule } from '@nestjs/jwt'
 import { PassportModule } from '@nestjs/passport'
 
-import { SECURITY } from '~/app.config'
+import { SECURITY } from '~/app.config.js'
 
-import { AuthController } from './auth.controller'
-import { AuthService } from './auth.service'
-import { JwtStrategy } from './jwt.strategy'
+import { AuthController } from './auth.controller.js'
+import { AuthService } from './auth.service.js'
+import { JwtStrategy } from './jwt.strategy.js'
 
 export const __secret: any = SECURITY.jwtSecret || 'asjhczxiucipoiopiqm2376'
 

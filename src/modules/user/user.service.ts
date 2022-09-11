@@ -1,5 +1,4 @@
 import { compareSync } from 'bcrypt'
-import { nanoid } from 'nanoid'
 import { sleep } from 'zx-cjs'
 
 import {
@@ -11,13 +10,13 @@ import {
 } from '@nestjs/common'
 import { ReturnModelType } from '@typegoose/typegoose'
 
-import { BizException } from '~/common/exceptions/business.excpetion'
-import { ErrorCodeEnum } from '~/constants/error-code.constant'
-import { CacheService } from '~/processors/cache/cache.service'
-import { InjectModel } from '~/transformers/model.transformer'
+import { BizException } from '~/common/exceptions/business.excpetion.js'
+import { ErrorCodeEnum } from '~/constants/error-code.constant.js'
+import { CacheService } from '~/processors/cache/cache.service.js'
+import { InjectModel } from '~/transformers/model.transformer.js'
 
-import { AuthService } from '../auth/auth.service'
-import { UserDocument , UserModel } from './user.model'
+import { AuthService } from '../auth/auth.service.js'
+import { UserDocument, UserModel } from './user.model.js'
 
 @Injectable()
 export class UserService {
@@ -77,6 +76,7 @@ export class UserService {
     if (hasMaster) {
       throw new BadRequestException('我已经有一个主人了哦')
     }
+    const { nanoid } = await import('nanoid')
     const authCode = nanoid(10)
 
     // @ts-ignore
@@ -112,7 +112,7 @@ export class UserService {
       if (isSamePassword) {
         throw new UnprocessableEntityException('密码可不能和原来的一样哦')
       }
-
+      const { nanoid } = await import('nanoid')
       // 2. 认证码重新生成
       const newCode = nanoid(10)
       doc.authCode = newCode

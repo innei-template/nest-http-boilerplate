@@ -5,11 +5,11 @@ import { inspect } from 'util'
 import { Injectable, Logger } from '@nestjs/common'
 
 import { version } from '~/../package.json'
-import { AXIOS_CONFIG } from '~/app.config'
-import { RedisKeys } from '~/constants/cache.constant'
-import { getRedisKey } from '~/utils/redis.util'
+import { AXIOS_CONFIG } from '~/app.config.js'
+import { RedisKeys } from '~/constants/cache.constant.js'
+import { getRedisKey } from '~/utils/redis.util.js'
 
-import { CacheService } from '../cache/cache.service'
+import { CacheService } from '../cache/cache.service.js'
 
 declare module 'axios' {
   interface AxiosRequestConfig {

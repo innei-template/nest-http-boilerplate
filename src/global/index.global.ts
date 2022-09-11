@@ -3,15 +3,13 @@ import { mkdirSync } from 'fs'
 
 import { Logger } from '@nestjs/common'
 
-import 'zx/globals'
+import { DATA_DIR, LOG_DIR } from '~/constants/path.constant.js'
 
-import { DATA_DIR, LOG_DIR } from '~/constants/path.constant'
+import { consola, registerStdLogger } from './consola.global.js'
 
-import { consola, registerStdLogger } from './consola.global'
+import './dayjs.global.js'
 
-import './dayjs.global'
-
-import { isDev } from './env.global'
+import { isDev } from './env.global.js'
 
 // 建立目录
 function mkdirs() {
@@ -35,7 +33,8 @@ function registerGlobal() {
   }
 }
 
-export function register() {
+export async function register() {
+  await import('zx/globals')
   mkdirs()
   registerStdLogger()
 

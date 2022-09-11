@@ -1,12 +1,12 @@
 import { Controller, Get, Query } from '@nestjs/common'
 
-import { HTTPDecorators } from '~/common/decorator/http.decorator'
-import { ApiName } from '~/common/decorator/openapi.decorator'
-import { BizException } from '~/common/exceptions/business.excpetion'
-import { ErrorCodeEnum } from '~/constants/error-code.constant'
-import { PagerDto } from '~/shared/dto/pager.dto'
+import { HTTPDecorators } from '~/common/decorator/http.decorator.js'
+import { ApiName } from '~/common/decorator/openapi.decorator.js'
+import { BizException } from '~/common/exceptions/business.excpetion.js'
+import { ErrorCodeEnum } from '~/constants/error-code.constant.js'
+import { PagerDto } from '~/shared/dto/pager.dto.js'
 
-import { PostService } from './post.service'
+import { PostService } from './post.service.js'
 
 @Controller('posts')
 @ApiName

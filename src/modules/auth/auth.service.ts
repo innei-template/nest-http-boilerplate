@@ -2,12 +2,12 @@ import { Injectable } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
 import { ReturnModelType } from '@typegoose/typegoose'
 
-import { BizException } from '~/common/exceptions/business.excpetion'
-import { ErrorCodeEnum } from '~/constants/error-code.constant'
-import { UserDocument , UserModel as User } from '~/modules/user/user.model'
-import { InjectModel } from '~/transformers/model.transformer'
+import { BizException } from '~/common/exceptions/business.excpetion.js'
+import { ErrorCodeEnum } from '~/constants/error-code.constant.js'
+import { UserModel as User, UserDocument } from '~/modules/user/user.model.js'
+import { InjectModel } from '~/transformers/model.transformer.js'
 
-import { JwtPayload } from './interfaces/jwt-payload.interface'
+import { JwtPayload } from './interfaces/jwt-payload.interface.js'
 
 @Injectable()
 export class AuthService {

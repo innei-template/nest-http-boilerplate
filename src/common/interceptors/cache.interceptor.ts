@@ -13,15 +13,18 @@ import {
   CallHandler,
   ExecutionContext,
   HttpAdapterHost,
+  Inject,
+  Injectable,
   NestInterceptor,
- Inject, Injectable, RequestMethod } from '@nestjs/common'
+  RequestMethod,
+} from '@nestjs/common'
 import { Reflector } from '@nestjs/core'
 
-import { REDIS } from '~/app.config'
-import * as META from '~/constants/meta.constant'
-import * as SYSTEM from '~/constants/system.constant'
-import { CacheService } from '~/processors/cache/cache.service'
-import { getNestExecutionContextRequest } from '~/transformers/get-req.transformer'
+import { REDIS } from '~/app.config.js'
+import * as META from '~/constants/meta.constant.js'
+import * as SYSTEM from '~/constants/system.constant.js'
+import { CacheService } from '~/processors/cache/cache.service.js'
+import { getNestExecutionContextRequest } from '~/transformers/get-req.transformer.js'
 
 /**
  * @class HttpCacheInterceptor

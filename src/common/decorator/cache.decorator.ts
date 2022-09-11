@@ -6,7 +6,7 @@
  */
 import { CacheKey, CacheTTL, SetMetadata } from '@nestjs/common'
 
-import * as META from '~/constants/meta.constant'
+import * as META from '~/constants/meta.constant.js'
 
 // 缓存器配置
 interface ICacheOption {

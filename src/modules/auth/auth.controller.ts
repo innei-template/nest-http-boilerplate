@@ -3,7 +3,7 @@ import { IsDate, IsNotEmpty, IsOptional, IsString } from 'class-validator'
 
 import { Controller, Scope } from '@nestjs/common'
 
-import { AuthService } from './auth.service'
+import { AuthService } from './auth.service.js'
 
 export class TokenDto {
   @IsDate()

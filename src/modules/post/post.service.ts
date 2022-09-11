@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common'
 
-import { InjectModel } from '~/transformers/model.transformer'
+import { InjectModel } from '~/transformers/model.transformer.js'
 
-import { PostModel } from './post.model'
+import { PostModel } from './post.model.js'
 
 @Injectable()
 export class PostService {

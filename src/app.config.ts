@@ -1,7 +1,7 @@
 import { AxiosRequestConfig } from 'axios'
 import { argv } from 'zx-cjs'
 
-import { isDev } from './utils/environment.utils'
+import { isDev } from './utils/environment.utils.js'
 
 console.log(argv)
 export const PORT = argv.port || 3333

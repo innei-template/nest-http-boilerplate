@@ -2,7 +2,7 @@ import { IsNotEmpty, IsString } from 'class-validator'
 
 import { Severity, index, modelOptions, prop } from '@typegoose/typegoose'
 
-import { BaseModel } from '~/shared/model/base.model'
+import { BaseModel } from '~/shared/model/base.model.js'
 
 @index({ slug: 1 })
 @index({ modified: -1 })

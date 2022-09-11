@@ -1,7 +1,7 @@
 import { homedir } from 'os'
 import { join } from 'path'
 
-import { isDev } from '../global/env.global'
+import { isDev } from '../global/env.global.js'
 
 const appName = 'nest-app-template'
 export const HOME = homedir()

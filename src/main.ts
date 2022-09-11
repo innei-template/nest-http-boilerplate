@@ -1,10 +1,10 @@
 #!env node
 // register global
-import { register } from './global/index.global'
 
 async function main() {
-  register()
-  const [{ bootstrap }] = await Promise.all([import('./bootstrap')])
+  const { register } = await import('./global/index.global.js')
+  await register()
+  const [{ bootstrap }] = await Promise.all([import('./bootstrap.js')])
   bootstrap()
 }
 

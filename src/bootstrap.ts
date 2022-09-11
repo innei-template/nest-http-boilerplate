@@ -3,12 +3,12 @@ import { NestFactory } from '@nestjs/core'
 import { NestFastifyApplication } from '@nestjs/platform-fastify'
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger'
 
-import { CROSS_DOMAIN, PORT } from './app.config'
-import { AppModule } from './app.module'
-import { fastifyApp } from './common/adapt/fastify.adapt'
-import { LoggingInterceptor } from './common/interceptors/logging.interceptor'
-import { MyLogger } from './processors/logger/logger.service'
-import { isDev } from './utils/environment.utils'
+import { CROSS_DOMAIN, PORT } from './app.config.js'
+import { AppModule } from './app.module.js'
+import { fastifyApp } from './common/adapt/fastify.adapt.js'
+import { LoggingInterceptor } from './common/interceptors/logging.interceptor.js'
+import { MyLogger } from './processors/logger/logger.service.js'
+import { isDev } from './utils/environment.utils.js'
 
 // const APIVersion = 1
 const Origin = CROSS_DOMAIN.allowedOrigins
