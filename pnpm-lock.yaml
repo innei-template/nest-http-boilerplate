@@ -24,7 +24,7 @@ specifiers:
   '@types/cache-manager': 4.0.1
   '@types/cron': 2.0.0
   '@types/ioredis': 4.28.10
-  '@types/lodash': 4.14.182
+  '@types/lodash': 4.14.185
   '@types/node': 18.0.6
   '@types/nodemailer': 6.4.4
   '@types/passport-jwt': 3.0.6
@@ -111,7 +111,7 @@ optionalDependencies:
   redis-memory-server: 0.5.0
 
 devDependencies:
-  '@innei/eslint-config-ts': 0.9.4
+  '@innei/eslint-config-ts': 0.9.4_typescript@4.7.4
   '@innei/prettier': 0.9.4
   '@nestjs/cli': 9.0.0
   '@nestjs/schematics': 9.0.1_typescript@4.7.4
@@ -120,7 +120,7 @@ devDependencies:
   '@types/cache-manager': 4.0.1
   '@types/cron': 2.0.0
   '@types/ioredis': 4.28.10
-  '@types/lodash': 4.14.182
+  '@types/lodash': 4.14.185
   '@types/node': 18.0.6
   '@types/nodemailer': 6.4.4
   '@types/passport-jwt': 3.0.6
@@ -542,8 +542,10 @@ packages:
       - supports-color
     dev: true
 
-  /@innei/eslint-config-ts/0.9.4:
+  /@innei/eslint-config-ts/0.9.4_typescript@4.7.4:
     resolution: {integrity: sha512-T52M6omBVNP6CbRN0sWNf8TjEEocuPTSN+FnVUY7c1P8JfgOTH9PFOG8fEt59UZLxZEIjy26pHGDqATv9inGVA==}
+    peerDependencies:
+      typescript: '>=4'
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.30.7_6wltbjakwuqm7awqswigmiuhd4
       '@typescript-eslint/parser': 5.30.7_he2ccbldppg44uulnyq4rwocfa
@@ -1094,8 +1096,8 @@ packages:
       '@types/node': 18.0.6
     dev: false
 
-  /@types/lodash/4.14.182:
-    resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
+  /@types/lodash/4.14.185:
+    resolution: {integrity: sha512-evMDG1bC4rgQg4ku9tKpuMh5iBNEwNa3tf9zRHdP1qlv+1WUg44xat4IxCE14gIpZRGUUWAx2VhItCZc25NfMA==}
     dev: true
 
   /@types/luxon/2.3.2:
