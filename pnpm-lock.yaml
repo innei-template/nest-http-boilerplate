@@ -27,7 +27,7 @@ specifiers:
   '@types/ioredis': 4.28.10
   '@types/lodash': 4.14.185
   '@types/node': 18.7.16
-  '@types/nodemailer': 6.4.5
+  '@types/nodemailer': 6.4.6
   '@types/passport-jwt': 3.0.6
   '@types/supertest': 2.0.12
   '@types/ua-parser-js': 0.7.36
@@ -127,7 +127,7 @@ devDependencies:
   '@types/ioredis': 4.28.10
   '@types/lodash': 4.14.185
   '@types/node': 18.7.16
-  '@types/nodemailer': 6.4.5
+  '@types/nodemailer': 6.4.6
   '@types/passport-jwt': 3.0.6
   '@types/supertest': 2.0.12
   '@types/ua-parser-js': 0.7.36
@@ -1322,8 +1322,8 @@ packages:
   /@types/node/18.7.16:
     resolution: {integrity: sha512-EQHhixfu+mkqHMZl1R2Ovuvn47PUw18azMJOTwSZr9/fhzHNGXAJ0ma0dayRVchprpCj0Kc1K1xKoWaATWF1qg==}
 
-  /@types/nodemailer/6.4.5:
-    resolution: {integrity: sha512-zuP3nBRQHI6M2PkXnGGy1Ww4VB+MyYHGgnfV2T+JR9KLkeWqPJuyVUgLpKXuFnA/b7pZaIDFh2sV4759B7jK1g==}
+  /@types/nodemailer/6.4.6:
+    resolution: {integrity: sha512-pD6fL5GQtUKvD2WnPmg5bC2e8kWCAPDwMPmHe/ohQbW+Dy0EcHgZ2oCSuPlWNqk74LS5BVMig1SymQbFMPPK3w==}
     dependencies:
       '@types/node': 18.7.16
     dev: true
