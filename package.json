@@ -53,7 +53,7 @@
     "@nestjs/platform-fastify": "9.0.11",
     "@nestjs/schedule": "2.1.0",
     "@nestjs/swagger": "6.1.2",
-    "@typegoose/auto-increment": "1.6.0",
+    "@typegoose/auto-increment": "1.7.0",
     "@typegoose/typegoose": "9.11.2",
     "axios": "0.27.2",
     "bcrypt": "5.0.1",
