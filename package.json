@@ -61,7 +61,7 @@
     "cache-manager-ioredis": "2.1.0",
     "chalk": "*",
     "class-transformer": "0.5.1",
-    "class-validator": "0.13.2",
+    "class-validator": "0.14.0",
     "consola": "*",
     "cron": "*",
     "dayjs": "1.11.5",
