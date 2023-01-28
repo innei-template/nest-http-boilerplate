@@ -41,7 +41,7 @@
     "test:cov": "vitest --coverage"
   },
   "dependencies": {
-    "@fastify/swagger": "^7.5.1",
+    "@fastify/swagger": "^8.0.0",
     "@nestjs/common": "9.2.1",
     "@nestjs/core": "9.2.1",
     "@nestjs/jwt": "10.0.1",
