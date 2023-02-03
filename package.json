@@ -52,7 +52,7 @@
     "@nestjs/swagger": "6.1.4",
     "@typegoose/auto-increment": "2.0.0",
     "@typegoose/typegoose": "9.12.0",
-    "axios": "1.2.5",
+    "axios": "1.3.2",
     "bcrypt": "5.1.0",
     "cache-manager": "4.1.0",
     "cache-manager-ioredis": "2.1.0",
