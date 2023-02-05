@@ -1,4 +1,5 @@
 import { createE2EApp } from 'test/helper/create-e2e-app'
+import { clearDynamicData } from 'test/utils'
 
 import { PostController } from '~/modules/post/post.controller'
 import { PostModel } from '~/modules/post/post.model'
@@ -39,6 +40,8 @@ describe('Test PostController E2E', () => {
     })
 
     expect(res.statusCode).toBe(200)
-    expect(res.json()).toMatchSnapshot()
+    const result = res.json()
+    clearDynamicData(result.data)
+    expect(result).toMatchSnapshot()
   })
 })
