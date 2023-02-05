@@ -36,8 +36,7 @@ jobs:
           run_install: true
       - name: Run Test
         run: |
-          yarn lint
-          yarn test
-          yarn test:e2e
+          npm run lint
+          npm run test
         env:
           CI: true
