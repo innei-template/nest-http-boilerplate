@@ -36,12 +36,8 @@ export class CacheService {
     return this.cache.get(key)
   }
 
-  public set<T>(
-    key: TCacheKey,
-    value: any,
-    options?: { ttl: number },
-  ): TCacheResult<T> {
-    return this.cache.set(key, value, options)
+  public set<T>(key: TCacheKey, value: any, options?: { ttl: number }) {
+    return this.cache.set(key, value, options?.ttl)
   }
 
   public getClient() {

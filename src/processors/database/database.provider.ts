@@ -6,6 +6,8 @@ import { mongoose } from '@typegoose/typegoose'
 import { MONGO_DB } from '~/app.config'
 import { DB_CONNECTION_TOKEN } from '~/constants/system.constant'
 
+mongoose.set('strictQuery', true)
+
 export const databaseProvider = {
   provide: DB_CONNECTION_TOKEN,
   useFactory: async () => {

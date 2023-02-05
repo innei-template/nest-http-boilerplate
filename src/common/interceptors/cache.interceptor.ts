@@ -6,15 +6,17 @@
  * @author Innei <https://innei.ren>
  */
 import { Observable } from 'rxjs'
-import { of } from 'rxjs'
-import { tap } from 'rxjs/operators'
+import { of, tap } from 'rxjs'
 
 import {
   CallHandler,
   ExecutionContext,
   HttpAdapterHost,
+  Inject,
+  Injectable,
   NestInterceptor,
- Inject, Injectable, RequestMethod } from '@nestjs/common'
+  RequestMethod,
+} from '@nestjs/common'
 import { Reflector } from '@nestjs/core'
 
 import { REDIS } from '~/app.config'
