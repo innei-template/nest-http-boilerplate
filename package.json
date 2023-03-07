@@ -64,7 +64,7 @@
     "cron": "*",
     "dayjs": "1.11.7",
     "lodash": "*",
-    "mongoose": "6.9.0",
+    "mongoose": "6.10.2",
     "mongoose-paginate-v2": "1.7.1",
     "nanoid": "4.0.1",
     "passport": "0.6.0",
