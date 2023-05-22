@@ -75,7 +75,7 @@
   },
   "devDependencies": {
     "@innei/bump-version": "^1.5.10",
-    "@innei/eslint-config-ts": "^0.9.8",
+    "@innei/eslint-config-ts": "^0.10.0",
     "@innei/prettier": "^0.9.8",
     "@nestjs/cli": "9.4.2",
     "@nestjs/schematics": "9.2.0",
