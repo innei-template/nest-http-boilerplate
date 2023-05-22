@@ -22,11 +22,11 @@ jobs:
         with:
           node-version: 16.x
       - name: Start MongoDB
-        uses: supercharge/mongodb-github-action@v1.8.0
+        uses: supercharge/mongodb-github-action@v1.9.0
         with:
           mongodb-version: 4.4
       - name: Start Redis
-        uses: supercharge/redis-github-action@1.4.0
+        uses: supercharge/redis-github-action@1.5.0
         with:
           redis-version: 6
       - name: Cache pnpm modules
@@ -38,7 +38,7 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v2.2.4
         with:
           version: 8.x.x
           run_install: true
@@ -120,7 +120,7 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v2.2.4
         with:
           version: 8.x.x
           run_install: true
