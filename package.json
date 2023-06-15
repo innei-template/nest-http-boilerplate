@@ -47,7 +47,7 @@
     "@nestjs/mapped-types": "^1.2.2",
     "@nestjs/passport": "9.0.3",
     "@nestjs/platform-fastify": "9.4.3",
-    "@nestjs/schedule": "2.2.3",
+    "@nestjs/schedule": "3.0.0",
     "@typegoose/auto-increment": "3.2.0",
     "@typegoose/typegoose": "11.2.0",
     "axios": "1.4.0",
