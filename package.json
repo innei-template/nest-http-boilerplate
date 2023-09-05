@@ -85,7 +85,6 @@
     "@swc/core": "1.3.82",
     "@types/bcrypt": "5.0.0",
     "@types/cache-manager": "4.0.3",
-    "@types/cron": "2.4.0",
     "@types/lodash": "4.14.197",
     "@types/node": "20.5.9",
     "@types/passport-jwt": "3.0.9",
