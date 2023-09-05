@@ -8,7 +8,7 @@
     "esModuleInterop": true,
     "strictNullChecks": false,
     "allowSyntheticDefaultImports": true,
-    "target": "ES2019",
+    "target": "es2022",
     "sourceMap": true,
     "outDir": "./dist",
     "noEmit": true,
@@ -17,18 +17,11 @@
     "noImplicitAny": false,
     "incremental": true,
     "resolveJsonModule": true,
-    "lib": [
-      "ES2021",
-      "ES2020"
-    ],
+    "lib": ["ES2021", "ES2020"],
     "skipLibCheck": true,
     "paths": {
-      "~": [
-        "./src"
-      ],
-      "~/*": [
-        "./src/*"
-      ]
+      "~": ["./src"],
+      "~/*": ["./src/*"]
     }
   },
   "include": [
@@ -36,6 +29,6 @@
     "./src/**/*.tsx",
     "./src/**/*.js",
     "./src/**/*.jsx",
-    "./**/*.ts",
-  ],
+    "./**/*.ts"
+  ]
 }
