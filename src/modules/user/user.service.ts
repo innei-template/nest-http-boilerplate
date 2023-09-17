@@ -11,7 +11,7 @@ import {
 } from '@nestjs/common'
 import { ReturnModelType } from '@typegoose/typegoose'
 
-import { BizException } from '~/common/exceptions/business.excpetion'
+import { BizException } from '~/common/exceptions/business.exception'
 import { ErrorCodeEnum } from '~/constants/error-code.constant'
 import { CacheService } from '~/processors/cache/cache.service'
 import { InjectModel } from '~/transformers/model.transformer'

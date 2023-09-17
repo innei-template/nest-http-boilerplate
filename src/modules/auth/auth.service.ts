@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
 import { ReturnModelType } from '@typegoose/typegoose'
 
-import { BizException } from '~/common/exceptions/business.excpetion'
+import { BizException } from '~/common/exceptions/business.exception'
 import { ErrorCodeEnum } from '~/constants/error-code.constant'
 import { UserModel as User, UserDocument } from '~/modules/user/user.model'
 import { InjectModel } from '~/transformers/model.transformer'
