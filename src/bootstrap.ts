@@ -1,4 +1,6 @@
-import { Logger, ValidationPipe } from '@nestjs/common'
+import { Logger } from 'nestjs-pretty-logger'
+
+import { ValidationPipe } from '@nestjs/common'
 import { NestFactory } from '@nestjs/core'
 import { NestFastifyApplication } from '@nestjs/platform-fastify'
 
@@ -6,7 +8,7 @@ import { CROSS_DOMAIN, PORT } from './app.config'
 import { AppModule } from './app.module'
 import { fastifyApp } from './common/adapter/fastify.adapter'
 import { LoggingInterceptor } from './common/interceptors/logging.interceptor'
-import { MyLogger } from './processors/logger/logger.service'
+import { logger } from './global/consola.global'
 import { isDev } from './utils/environment.utils'
 
 // const APIVersion = 1
@@ -45,23 +47,8 @@ export async function bootstrap() {
     }),
   )
 
-  // if (isDev) {
-  //   const options = new DocumentBuilder()
-  //     .setTitle('API')
-  //     .setDescription('The blog API description')
-  //     // .setVersion(`${APIVersion}`)
-  //     .addSecurity('bearer', {
-  //       type: 'http',
-  //       scheme: 'bearer',
-  //     })
-  //     .addBearerAuth()
-  //     .build()
-  //   const document = SwaggerModule.createDocument(app, options)
-  //   SwaggerModule.setup('api-docs', app, document)
-  // }
-
   await app.listen(+PORT, '0.0.0.0', async (err, address) => {
-    app.useLogger(app.get(MyLogger))
+    app.useLogger(app.get(Logger))
     consola.info('ENV:', process.env.NODE_ENV)
     const url = await app.getUrl()
     const pid = process.pid
@@ -72,7 +59,7 @@ export async function bootstrap() {
     }
     consola.success(`[${prefix + pid}] Server listen on: ${url}`)
 
-    Logger.log(`Server is up. ${chalk.yellow(`+${performance.now() | 0}ms`)}`)
+    logger.log(`Server is up. ${chalk.yellow(`+${performance.now() | 0}ms`)}`)
   })
   if (module.hot) {
     module.hot.accept()

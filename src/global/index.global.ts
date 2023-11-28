@@ -7,7 +7,7 @@ import 'zx-cjs/globals'
 
 import { DATA_DIR, LOG_DIR } from '~/constants/path.constant'
 
-import { consola, registerStdLogger } from './consola.global'
+import { consola } from './consola.global'
 
 import './dayjs.global'
 
@@ -37,7 +37,5 @@ function registerGlobal() {
 
 export function register() {
   mkdirs()
-  registerStdLogger()
-
   registerGlobal()
 }

@@ -1,3 +1,5 @@
+import { LoggerModule } from 'nestjs-pretty-logger'
+
 import { Module } from '@nestjs/common'
 import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core'
 
@@ -11,7 +13,6 @@ import { PostModule } from './modules/post/post.module'
 import { CacheModule } from './processors/cache/cache.module'
 import { DatabaseModule } from './processors/database/database.module'
 import { HelperModule } from './processors/helper/helper.module'
-import { LoggerModule } from './processors/logger/logger.module'
 
 @Module({
   imports: [
@@ -19,8 +20,8 @@ import { LoggerModule } from './processors/logger/logger.module'
     DatabaseModule,
     HelperModule,
     ConfigsModule,
-    LoggerModule,
 
+    LoggerModule,
     PostModule,
   ],
   controllers: [AppController],
