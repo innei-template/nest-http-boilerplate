@@ -5,7 +5,7 @@
   "author": "Innei <https://innei.ren>",
   "private": true,
   "license": "MIT",
-  "packageManager": "pnpm@8.8.0",
+  "packageManager": "pnpm@8.11.0",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -92,10 +92,10 @@
     "@types/ua-parser-js": "0.7.39",
     "@vercel/ncc": "0.38.1",
     "cross-env": "7.0.3",
-    "eslint": "^8.54.0",
+    "eslint": "^8.55.0",
     "husky": "8.0.3",
     "ioredis": "^5.3.2",
-    "lint-staged": "15.1.0",
+    "lint-staged": "15.2.0",
     "prettier": "3.1.0",
     "rimraf": "5.0.5",
     "rollup-plugin-swc": "0.2.1",
