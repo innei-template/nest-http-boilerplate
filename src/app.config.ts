@@ -1,5 +1,6 @@
 import { AxiosRequestConfig } from 'axios'
-import { argv } from 'zx-cjs'
+
+import { argv } from '@nest-http/external'
 
 import { isDev } from './utils/environment.utils'
 

@@ -1,7 +1,6 @@
-import { compareSync } from 'bcrypt'
-import { nanoid } from 'nanoid'
-import { sleep } from 'zx-cjs'
+import { compareSync } from 'bcryptjs'
 
+import { nanoid, sleep } from '@nest-http/external'
 import {
   BadRequestException,
   ForbiddenException,
@@ -77,7 +76,7 @@ export class UserService {
     if (hasMaster) {
       throw new BadRequestException('我已经有一个主人了哦')
     }
-    const authCode = nanoid(10)
+    const authCode = nanoid.nanoid(10)
 
     // @ts-ignore
     const res = await this.userModel.create({ ...model, authCode })
@@ -114,7 +113,7 @@ export class UserService {
       }
 
       // 2. 认证码重新生成
-      const newCode = nanoid(10)
+      const newCode = nanoid.nanoid(10)
       doc.authCode = newCode
     }
     return await this.userModel
