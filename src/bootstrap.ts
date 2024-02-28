@@ -54,9 +54,7 @@ export async function bootstrap() {
     const pid = process.pid
 
     const prefix = 'P'
-    if (isDev) {
-      consola.debug(`[${prefix + pid}] OpenApi: ${url}/api-docs`)
-    }
+
     consola.success(`[${prefix + pid}] Server listen on: ${url}`)
 
     logger.log(`Server is up. ${chalk.yellow(`+${performance.now() | 0}ms`)}`)
