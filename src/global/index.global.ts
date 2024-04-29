@@ -1,5 +1,4 @@
-/* eslint-disable import/order */
-import { mkdirSync } from 'fs'
+import { mkdirSync } from 'node:fs'
 
 import { Logger } from '@nestjs/common'
 

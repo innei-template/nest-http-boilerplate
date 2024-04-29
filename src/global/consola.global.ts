@@ -1,4 +1,3 @@
-/* eslint-disable prefer-rest-params */
 import { createLogger } from 'nestjs-pretty-logger'
 
 import { LOG_DIR } from '~/constants/path.constant'

@@ -21,13 +21,13 @@ app.getInstance().addHook('onRequest', (request, reply, done) => {
       'Eh. PHP is not support on this machine. Yep, I also think PHP is bestest programming language. But for me it is beyond my reach.'
 
     return reply.code(418).send()
-  } else if (url.match(/\/(adminer|admin|wp-login)$/g)) {
+  } else if (/\/(adminer|admin|wp-login)$/g.test(url)) {
     reply.raw.statusMessage = 'Hey, What the fuck are you doing!'
     return reply.code(200).send()
   }
 
   // skip favicon request
-  if (url.match(/favicon.ico$/) || url.match(/manifest.json$/)) {
+  if (/favicon.ico$/.test(url) || /manifest.json$/.test(url)) {
     return reply.code(204).send()
   }
 

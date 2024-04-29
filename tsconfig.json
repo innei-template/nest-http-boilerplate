@@ -6,6 +6,9 @@
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "lib": [
+      "ES2021"
+    ],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "target": "es2017",

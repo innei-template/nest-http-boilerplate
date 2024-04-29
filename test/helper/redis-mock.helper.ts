@@ -1,7 +1,7 @@
-import IORedis, { Redis } from 'ioredis'
+import IORedis from 'ioredis'
 import RedisMemoryServer from 'redis-memory-server'
-
 import { CacheService } from '~/processors/cache/cache.service'
+import type { Redis } from 'ioredis'
 
 export class MockCacheService {
   private client: Redis

@@ -1,4 +1,4 @@
-import { IConfig } from './configs.interface'
+import type { IConfig } from './configs.interface'
 
 export const generateDefaultConfig: () => IConfig = () => ({
   userSetting: {

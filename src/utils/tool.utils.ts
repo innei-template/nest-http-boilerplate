@@ -1,5 +1,6 @@
+import { createHash } from 'node:crypto'
 export const md5 = (text: string) =>
-  require('crypto').createHash('md5').update(text).digest('hex') as string
+  createHash('md5').update(text).digest('hex') as string
 
 export function getAvatar(mail: string | undefined) {
   if (!mail) {
@@ -69,7 +70,7 @@ export async function* asyncPool<T = any>(
 }
 
 export const camelcaseKey = (key: string) =>
-  key.replace(/_(\w)/g, (_, c) => (c ? c.toUpperCase() : ''))
+  key.replaceAll(/_(\w)/g, (_, c) => (c ? c.toUpperCase() : ''))
 
 export const camelcaseKeys = (obj: any) => {
   if (typeof obj !== 'object' || obj === null) {

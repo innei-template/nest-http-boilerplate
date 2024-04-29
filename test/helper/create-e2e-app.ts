@@ -1,7 +1,4 @@
-import { ModuleMetadata } from '@nestjs/common'
 import { APP_INTERCEPTOR } from '@nestjs/core'
-import { NestFastifyApplication } from '@nestjs/platform-fastify'
-import { BeAnObject, ReturnModelType } from '@typegoose/typegoose/lib/types'
 
 import { HttpCacheInterceptor } from '~/common/interceptors/cache.interceptor'
 import { JSONTransformerInterceptor } from '~/common/interceptors/json-transformer.interceptor'
@@ -11,6 +8,12 @@ import { getModelToken } from '~/transformers/model.transformer'
 import { dbHelper } from './db-mock.helper'
 import { redisHelper } from './redis-mock.helper'
 import { setupE2EApp } from './setup-e2e'
+import type {
+  BeAnObject,
+  ReturnModelType,
+} from '@typegoose/typegoose/lib/types'
+import type { NestFastifyApplication } from '@nestjs/platform-fastify'
+import type { ModuleMetadata } from '@nestjs/common'
 
 type ClassType = new (...args: any[]) => any
 

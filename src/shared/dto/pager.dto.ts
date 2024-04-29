@@ -13,12 +13,12 @@ export class PagerDto {
   @Max(50)
   @IsInt()
   @Expose()
-  @Transform(({ value: val }) => (val ? parseInt(val) : 10), {
+  @Transform(({ value: val }) => (val ? Number.parseInt(val) : 10), {
     toClassOnly: true,
   })
   size?: number
 
-  @Transform(({ value: val }) => (val ? parseInt(val) : 1), {
+  @Transform(({ value: val }) => (val ? Number.parseInt(val) : 1), {
     toClassOnly: true,
   })
   @Min(1)

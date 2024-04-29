@@ -2,7 +2,6 @@ import { Logger } from 'nestjs-pretty-logger'
 
 import { ValidationPipe } from '@nestjs/common'
 import { NestFactory } from '@nestjs/core'
-import { NestFastifyApplication } from '@nestjs/platform-fastify'
 
 import { CROSS_DOMAIN, PORT } from './app.config'
 import { AppModule } from './app.module'
@@ -10,6 +9,7 @@ import { fastifyApp } from './common/adapter/fastify.adapter'
 import { LoggingInterceptor } from './common/interceptors/logging.interceptor'
 import { logger } from './global/consola.global'
 import { isDev } from './utils/environment.utils'
+import type { NestFastifyApplication } from '@nestjs/platform-fastify'
 
 // const APIVersion = 1
 const Origin = CROSS_DOMAIN.allowedOrigins
@@ -47,7 +47,7 @@ export async function bootstrap() {
     }),
   )
 
-  await app.listen(+PORT, '0.0.0.0', async (err, address) => {
+  await app.listen(+PORT, '0.0.0.0', async (_err, _address) => {
     app.useLogger(app.get(Logger))
     consola.info('ENV:', process.env.NODE_ENV)
     const url = await app.getUrl()
