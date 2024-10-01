@@ -52,7 +52,7 @@
     "@nestjs/schedule": "4.0.1",
     "@typegoose/auto-increment": "4.2.0",
     "@typegoose/typegoose": "12.2.0",
-    "axios": "1.6.7",
+    "axios": "1.7.4",
     "bcryptjs": "2.4.3",
     "cache-manager": "5.4.0",
     "cache-manager-ioredis": "2.1.0",
