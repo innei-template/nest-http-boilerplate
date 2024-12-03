@@ -62,7 +62,7 @@
     "cron": "^3.1.6",
     "dayjs": "1.11.10",
     "lodash": "*",
-    "mongoose": "8.2.0",
+    "mongoose": "8.8.3",
     "mongoose-paginate-v2": "1.8.0",
     "nanoid": "^5.0.6",
     "nestjs-pretty-logger": "0.2.1",
