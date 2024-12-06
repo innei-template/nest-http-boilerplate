@@ -2,15 +2,13 @@ import { mkdirSync } from 'node:fs'
 
 import { Logger } from '@nestjs/common'
 
-import '@nest-http/external/zx-global'
+import chalk from 'picocolors'
 
 import { DATA_DIR, LOG_DIR } from '~/constants/path.constant'
 
 import { consola } from './consola.global'
-
-import './dayjs.global'
-
 import { isDev } from './env.global'
+import './dayjs.global'
 
 // 建立目录
 function mkdirs() {
@@ -22,7 +20,6 @@ function mkdirs() {
 }
 
 function registerGlobal() {
-  $.verbose = isDev
   Object.assign(globalThis, {
     isDev,
     consola,

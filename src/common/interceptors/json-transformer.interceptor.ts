@@ -1,11 +1,3 @@
-/**
- * 对响应体进行 JSON 标准的转换
- * @author Innei
- */
-import { isArrayLike, isObjectLike } from 'lodash'
-import { Observable, map } from 'rxjs'
-import snakecaseKeys from 'snakecase-keys'
-
 import {
   CallHandler,
   ExecutionContext,
@@ -13,6 +5,14 @@ import {
   NestInterceptor,
 } from '@nestjs/common'
 import { Reflector } from '@nestjs/core'
+/**
+ * 对响应体进行 JSON 标准的转换
+ * @author Innei
+ */
+import { isArrayLike, isObjectLike } from 'es-toolkit/compat'
+
+import { map, Observable } from 'rxjs'
+import snakecaseKeys from 'snakecase-keys'
 
 import { RESPONSE_PASSTHROUGH_METADATA } from '~/constants/system.constant'
 
@@ -52,32 +52,34 @@ export class JSONTransformerInterceptor implements NestInterceptor {
         return this.serialize(i)
       })
     } else {
+      let _obj = obj as any
       // if is Object
-      if (obj.toJSON || obj.toObject) {
-        obj = obj.toJSON?.() ?? obj.toObject?.()
+      if (_obj.toJSON || _obj.toObject) {
+        _obj = _obj.toJSON?.() ?? _obj.toObject?.()
       }
 
-      Reflect.deleteProperty(obj, '__v')
+      Reflect.deleteProperty(_obj, '__v')
 
-      const keys = Object.keys(obj)
+      const keys = Object.keys(_obj)
       for (const key of keys) {
-        const val = obj[key]
+        const _val = _obj[key]
         // first
-        if (!isObjectLike(val)) {
+        if (!isObjectLike(_val)) {
           continue
         }
 
+        const val = _val as any
         if (val.toJSON) {
-          obj[key] = val.toJSON()
+          _obj[key] = val.toJSON()
           // second
-          if (!isObjectLike(obj[key])) {
+          if (!isObjectLike(_obj[key])) {
             continue
           }
-          Reflect.deleteProperty(obj[key], '__v')
+          Reflect.deleteProperty(_obj[key], '__v')
         }
-        obj[key] = this.serialize(obj[key])
+        _obj[key] = this.serialize(_obj[key])
       }
-      obj = snakecaseKeys(obj)
+      _obj = snakecaseKeys(_obj)
     }
     return obj
   }

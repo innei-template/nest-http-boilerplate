@@ -1,7 +1,5 @@
-import { WriteStream } from 'node:fs'
+import fs, { WriteStream } from 'node:fs'
 import { resolve } from 'node:path'
-import { FastifyReply, FastifyRequest } from 'fastify'
-
 import {
   ArgumentsHost,
   Catch,
@@ -11,8 +9,11 @@ import {
   Inject,
   Logger,
 } from '@nestjs/common'
-import { Reflector } from '@nestjs/core'
 
+import { Reflector } from '@nestjs/core'
+import { FastifyReply, FastifyRequest } from 'fastify'
+
+import chalk from 'picocolors'
 import { HTTP_REQUEST_TIME } from '~/constants/meta.constant'
 import { LOG_DIR } from '~/constants/path.constant'
 import { REFLECTOR } from '~/constants/system.constant'

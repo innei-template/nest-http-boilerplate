@@ -1,7 +1,9 @@
+import { ValidationPipe } from '@nestjs/common'
+
+import { NestFactory } from '@nestjs/core'
 import { Logger } from 'nestjs-pretty-logger'
 
-import { ValidationPipe } from '@nestjs/common'
-import { NestFactory } from '@nestjs/core'
+import chalk from 'picocolors'
 
 import { CROSS_DOMAIN, PORT } from './app.config'
 import { AppModule } from './app.module'

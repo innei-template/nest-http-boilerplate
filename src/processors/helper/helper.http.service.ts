@@ -1,15 +1,17 @@
 import { performance } from 'node:perf_hooks'
 import { inspect } from 'node:util'
-import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
-
 import { Injectable, Logger } from '@nestjs/common'
 
+import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
+
+import chalk from 'picocolors'
+
+import { version } from '~/../package.json'
 import { AXIOS_CONFIG } from '~/app.config'
 import { RedisKeys } from '~/constants/cache.constant'
-import { getRedisKey } from '~/utils/redis.util'
 
+import { getRedisKey } from '~/utils/redis.util'
 import { CacheService } from '../cache/cache.service'
-import { version } from '~/../package.json'
 
 declare module 'axios' {
   interface AxiosRequestConfig {

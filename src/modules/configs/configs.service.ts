@@ -1,7 +1,3 @@
-import { ClassConstructor, plainToInstance } from 'class-transformer'
-import { ValidatorOptions, validateSync } from 'class-validator'
-import { cloneDeep, mergeWith } from 'lodash'
-
 import {
   BadRequestException,
   Injectable,
@@ -9,6 +5,10 @@ import {
   ValidationPipe,
 } from '@nestjs/common'
 import { ReturnModelType } from '@typegoose/typegoose'
+import { ClassConstructor, plainToInstance } from 'class-transformer'
+
+import { validateSync, ValidatorOptions } from 'class-validator'
+import { cloneDeep, mergeWith } from 'es-toolkit/compat'
 
 import { RedisKeys } from '~/constants/cache.constant'
 import { CacheService } from '~/processors/cache/cache.service'
@@ -30,7 +30,7 @@ const map: Record<string, any> = Object.entries(optionDtos).reduce(
     allOptionKeys.add(optionKey)
     return {
       ...obj,
-      [`${optionKey}`]: value,
+      [String(optionKey)]: value,
     }
   },
   {},

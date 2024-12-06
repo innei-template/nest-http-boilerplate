@@ -3,6 +3,8 @@
  */
 import { mongoose } from '@typegoose/typegoose'
 
+import chalk from 'picocolors'
+
 import { MONGO_DB } from '~/app.config'
 import { DB_CONNECTION_TOKEN } from '~/constants/system.constant'
 

@@ -1,14 +1,13 @@
+import { dbHelper } from 'test/helper/db-mock.helper'
+
+import { redisHelper } from 'test/helper/redis-mock.helper'
+
 // @ts-nocheck
 import { beforeAll } from 'vitest'
 
-import 'zx/globals'
-
-import { dbHelper } from 'test/helper/db-mock.helper'
-import { redisHelper } from 'test/helper/redis-mock.helper'
+declare const global: any
 
 beforeAll(async () => {
-  await import('zx/globals')
-
   global.isDev = true
   global.cwd = process.cwd()
 })

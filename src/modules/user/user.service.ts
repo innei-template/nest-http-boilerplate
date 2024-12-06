@@ -1,6 +1,5 @@
-import { compareSync } from 'bcryptjs'
+import { nanoid } from '@nest-http/external'
 
-import { nanoid, sleep } from '@nest-http/external'
 import {
   BadRequestException,
   ForbiddenException,
@@ -9,12 +8,14 @@ import {
   UnprocessableEntityException,
 } from '@nestjs/common'
 import { ReturnModelType } from '@typegoose/typegoose'
+import { compareSync } from 'bcryptjs'
 
 import { BizException } from '~/common/exceptions/business.exception'
 import { ErrorCodeEnum } from '~/constants/error-code.constant'
 import { CacheService } from '~/processors/cache/cache.service'
 import { InjectModel } from '~/transformers/model.transformer'
 
+import { sleep } from '~/utils/tool.utils'
 import { AuthService } from '../auth/auth.service'
 import { UserDocument, UserModel } from './user.model'
 

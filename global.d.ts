@@ -1,7 +1,7 @@
-import { Consola } from 'consola'
-import 'zx/globals'
-import { ModelType } from '@typegoose/typegoose/lib/types'
-import { Document, PaginateModel } from 'mongoose'
+import type { ModelType } from '@typegoose/typegoose/lib/types'
+import type { Consola } from 'consola'
+import type { Document, PaginateModel } from 'mongoose'
+
 declare global {
   export const isDev: boolean
 

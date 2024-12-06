@@ -1,7 +1,10 @@
-import { argv } from '@nest-http/external'
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
 
 import { isDev } from './utils/environment.utils'
 import type { AxiosRequestConfig } from 'axios'
+
+const argv = yargs(hideBin(process.argv)).argv as Record<string, unknown>
 
 console.log(argv)
 export const PORT = argv.port || 3333

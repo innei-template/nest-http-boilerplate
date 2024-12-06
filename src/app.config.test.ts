@@ -1,9 +1,11 @@
-import { argv } from '@nest-http/external'
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
 
 import { isDev } from './utils/environment.utils'
 import type { AxiosRequestConfig } from 'axios'
 
-console.log(argv)
+const argv = yargs(hideBin(process.argv)).argv as Record<string, unknown>
+
 export const PORT = argv.port || 3333
 export const CROSS_DOMAIN = {
   allowedOrigins: [
