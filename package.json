@@ -48,7 +48,7 @@
     "@nestjs/jwt": "10.2.0",
     "@nestjs/mapped-types": "^2.0.6",
     "@nestjs/passport": "10.0.3",
-    "@nestjs/platform-fastify": "10.4.13",
+    "@nestjs/platform-fastify": "11.1.24",
     "@nestjs/schedule": "4.1.1",
     "@typegoose/auto-increment": "4.8.0",
     "@typegoose/typegoose": "12.9.1",
